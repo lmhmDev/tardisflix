@@ -1,0 +1,169 @@
+nav{
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 0 10px;
+}
+
+
+
+.nav-left{
+    display:flex;
+    justify-content: space-around;
+    width: 50%;
+    min-width: 820px;
+}
+
+.logo{
+    width: 30%;
+}
+
+.logo > img{
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.links{
+    display: flex;
+    width: 100%;
+}
+
+.links ul{
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.links li{
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.links li::after{
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 1px;
+    height: 2px;
+    width: 0;
+    background-color: white;
+    transition: width .5s;
+}
+
+.links li:hover::after{
+    width: 100%;
+    transition: width .5s;
+}
+
+.nav-right{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-right input{
+    height: 70%;
+    border-radius: 6px;
+    padding-left: 5px;
+    margin-right: 10px;
+    border: none;
+}
+
+.logout{
+    cursor: pointer;
+    width: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.logout img{
+    height: 70%;
+    object-fit: scale-down;
+}
+
+#burger-checkbox {
+    display: none;
+}
+
+.burger-label {
+    display: none;
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+}
+
+.burger-label:before {
+    content: '';
+    background-color: darkgray;
+    width: 1rem;
+    height: 0.12rem;
+    position: absolute;
+    left: 0.45rem;
+    top: 0.65rem;
+  
+    box-shadow: 0 0.25rem 0 0 darkgray, 0 0.5rem 0 0 darkgray;
+  }
+
+.hidden-menu{
+    position: absolute;
+    top: 7vh;
+    right: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 5;
+    width: 50%;
+    height: 93vh;
+    padding: 10px;
+    display: none;
+}
+
+.hidden-menu ul{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: large;
+}
+
+#burger-checkbox:checked ~ .hidden-menu {
+    display: block;
+  }
+
+@media(max-width:1060px){
+    .links{
+        display: none;
+    }
+    .nav-left{
+        justify-content: flex-start;
+        width: 50%;
+        min-width: 0;
+    }
+    .nav-left img{
+        min-width: 200px;
+    }
+    .logout{
+        display:none;
+    }
+    .burger-label{
+        display: block;
+    }
+}
+
+@media(max-width:425px){
+    .logo >img{
+        min-width: 100px;
+    }
+
+    input{
+        width: 70%;
+    }
+}
+

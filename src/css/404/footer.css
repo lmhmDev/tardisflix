@@ -1,0 +1,39 @@
+footer{
+    color: #757575;
+    background-color: black;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+    overflow: hidden;
+}
+
+footer > p{
+    margin: 20px 0;
+}
+
+.footer-links-wrapper{
+    display: flex;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+}
+
+.footer-links > a{
+    color:  #757575;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.footer-links > a:hover{
+    text-decoration: underline;
+}
+
+@media(max-width:460px){
+    .footer-links-wrapper{
+        flex-wrap: wrap;
+    }
+}

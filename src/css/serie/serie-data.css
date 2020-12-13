@@ -1,0 +1,41 @@
+.serie-data{
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    color: white;
+    padding: 0 4%;
+}
+
+.data-left{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+}
+
+.data-left h2{
+    font-size: 30px;
+}
+
+.data-left p{
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.data-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+}
+
+.data-right h2{
+    font-size: 30px;
+}
+
+.data-right p{
+    font-weight: bold;
+}
+
+.data-right ul{
+    list-style: none;
+}

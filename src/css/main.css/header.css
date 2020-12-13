@@ -1,0 +1,37 @@
+header{
+    height: 80vh;
+    background: url('../../img/main-header-background.jpeg');
+    background-size: cover;
+    position: relative;
+}
+
+header button{
+    cursor: pointer;
+}
+
+header button:hover{
+    transition: opacity .5s;
+    opacity: .9;
+}
+
+.play-header{
+    position: absolute;
+    bottom: 80px;
+    left: 3%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+}
+
+.info-header{
+    position: absolute;
+    bottom: 20px;
+    left: 3%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+}
